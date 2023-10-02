@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/VehicleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle List"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:background="#2559F3"
+            android:textColor="@color/white"
+            android:padding="8dp"/>
+
+        <ListView
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/VehicleLv"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="22sp"
+            android:id="@+id/PersonTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Person List"
+            android:textStyle="bold"
+            android:background="#E32323"
+            android:textColor="@color/white"
+            android:padding="8dp"/>
+
+        <ListView
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/PersonLv"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/PetTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pet List"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="#18A81A"
+            android:textColor="@color/white"
+            android:padding="8dp"/>
+
+        <ListView
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/PetLv"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
